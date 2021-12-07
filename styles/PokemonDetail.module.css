@@ -1,0 +1,139 @@
+.arrowsContainer {
+  width: 100vw;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.previousArrow,
+.nextArrow {
+  width: 50px;
+}
+.previousArrow {
+  transform: rotate(180deg);
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.pokemonDetailTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemonDetailTop > h4 {
+  margin-bottom: 0;
+}
+
+.pokemonImageContainer {
+  text-align: center;
+}
+.pokemonImage {
+  width: 50%;
+  padding: 1rem 0;
+  height: 250px;
+}
+
+div.pokemonMaindata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.pokemonDataLeft > div > h4 {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+div.pokemonDataType {
+  display: flex;
+  align-content: center;
+}
+div.pokemonDataType h4 {
+  margin-top: 0;
+}
+div.pokemonDataHeight span,
+div.pokemonDataWeight span {
+  font-weight: normal;
+  padding-left: 0.5rem;
+}
+
+div.pokemonDataType span {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+div.pokemonDataAbilities {
+  text-align: right;
+}
+div.pokemonDataAbilities > h4 {
+  margin: 0;
+}
+
+p.abilityP {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+div.pokemonDataStats {
+  padding-bottom: 2rem;
+}
+div.pokemonDataStats > h2 {
+  margin-bottom: 0.5rem;
+}
+.dataStatsDetail {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+.dataStatsDetail p {
+  margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a.homeButton {
+  margin-top: 1rem;
+  background-color: rgb(106, 228, 187);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+a.homeButton:hover {
+  background-color: rgb(21, 118, 85);
+  color: #fff;
+}
+
+@media (min-width: 940px) {
+  div.pokemonData {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div.pokemonImageContainer {
+    width: 35%;
+  }
+  .pokemonImage {
+    width: 80%;
+  }
+  div.pokemonMaindata {
+    flex: 1 1 auto;
+    margin-right: 1.5rem;
+  }
+  div.pokemonDataAbilities {
+    text-align: left;
+    min-width: 130px;
+  }
+  div.pokemonDataStats > h2 {
+    padding-left: 36%;
+  }
+  div.pokemonDataStats > div {
+    padding-left: 40%;
+  }
+}

@@ -1,0 +1,64 @@
+img.githubLogo,
+img.linkedinLogo {
+  background-color: #fff;
+  width: 25px;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 0 10px;
+}
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 80vw;
+}
+
+.aboutMe > h1 {
+  margin-bottom: 1rem;
+}
+.aboutMe > h4 {
+  margin-top: 1rem;
+}
+
+.a {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.a:hover > p {
+  color: rgb(57, 82, 191);
+  transform: scale(1.1);
+}
+.a > img {
+  padding: 0;
+  padding-bottom: 1px;
+}
+.a > p {
+  margin: 0;
+}
+
+.skills {
+  margin-top: 3rem;
+}
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.logo {
+  width: 50px;
+  margin: 0 0.5rem 1rem;
+}
+
+@media (min-width: 940px) {
+  .mainInfo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .aboutMe {
+    width: 60%;
+  }
+  .links {
+    width: 32%;
+  }
+}
