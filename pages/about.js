@@ -1,13 +1,11 @@
-import Head from "next/head";
+import Meta from "../components/Meta";
 
 import aboutStyles from "../styles/About.module.css";
 
 const about = () => {
   return (
     <div>
-      <Head>
-        <title>About</title>
-      </Head>
+      <Meta title="About Me" />
       <section className={aboutStyles.mainInfo}>
         <div className={aboutStyles.aboutMe}>
           <h1>Jorge Herrando</h1>

@@ -1,3 +1,5 @@
+import Meta from "../../../components/Meta";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -33,6 +35,7 @@ const pokemonDetail = ({ pokemon }) => {
 
   return (
     <>
+      <Meta title={pokemon.name} description={pokemon.name} />
       {pokemon.id < 150 && pokemon.id > 1 && (
         <div className={pokeDetailStyles.arrowsContainer}>
           <Link href="/pokemon/[id]" as={`/pokemon/${pokemon.id - 1}`}>
